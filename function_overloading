@@ -1,0 +1,31 @@
+#include <iostream> 
+using namespace std;
+
+class ABC {
+    public:
+    void func(int x, int y) {
+        cout<<x<<" "<<y<<endl;
+
+    }
+
+    void func(int x, int y, int z) {
+        cout<<x<<" "<<y<<" "<<z<<endl;
+
+    }
+
+    void func(float x) {
+        cout<<x<<endl;
+
+    }
+
+};
+
+int main() {
+    ABC ob;
+    ob.func(5, 8);
+    ob.func(3, 5, 7);
+    ob.func(3.5);
+
+    return 0;
+
+}
