@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class A {
+    public:
+        int x;  
+};
+
+class B: public A {
+    public:
+    int y;
+
+};
+
+class C: public B {
+    public:
+    int z;
+
+};
+
+int main() {
+    C ob;
+    ob.x = 6;
+    ob.y = 7;
+    ob.z = 5;
+    cout <<ob.z<<endl;
+    cout <<ob.x<<endl;
+    cout <<ob.y<<endl;
+
+
+    return 0;
+}
