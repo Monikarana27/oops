@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class Point {
+    private:
+    int x, y;
+
+    public:
+    Point(int x1, int y1) {
+        x = x1;
+        y = y1;
+    }
+        int getx() {
+            return x;
+        }
+        int gety() {
+            return y;
+        }
+    };
+
+
+
+int main() {
+    Point ob(3,4);
+    cout<<ob.getx()<<endl;
+    cout<<ob.gety()<<endl;
+
+    return 0;
+}
